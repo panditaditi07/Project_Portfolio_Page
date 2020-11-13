@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -70,7 +74,7 @@ ul li {
 }
 @media (max-width: 600px) {
   #banner-image {
-    background-image: url("images/banner1.jpg");
+    background-image: url("/images/banner1.jpg");
     background-size: cover;
     background-position-x: center;
     max-width: 100%;
