@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue";
+  box-sizing: border-box;
+}
+
+/* a {
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul li {
+    display: inline-block;
+    padding: 20px;
+  }*/
+
+.item-link {
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  color: black;
+  /* font-size: 5px; */
+}
+.item-link:hover {
+  text-decoration: underline;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 10px; */
+  /* background-color: */
+}
+
+.topnav ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+  padding: 20px;
+}
+/*-------banner---------*/
+
+.container {
+  /* position: absolute; */
+  /* margin: 20px; */
+  width: auto;
+}
+#banner-image {
+  background-image: url("images/banner1.jpg");
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .topnav {
+    flex-direction: column;
+  }
+  ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  #banner-image {
+    background-image: url("images/banner1.jpg");
+    background-size: cover;
+    background-position-x: center;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+/*--------- Portfolio---------*/
+.section-1 {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 150px;
+  box-shadow: 5px 5px 10px #c0c0c0;
+}
+.project-1 img {
+  width: 500px;
+  height: 390px;
+  display: block;
+}
+
+.project-2 img {
+  width: 500px;
+  height: 390px;
+  display: block;
+}
+.space {
+  height: 20px;
+}
+.container-1 {
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+.container-1 .heading1 {
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.heading2 {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px;
+}
+
+.container-1 {
+  display: none;
+}
+
+.project-link:hover + .container-1 {
+  display: block;
+}
+.pro3:hover {
+  filter: brightness(30%);
+}
+
+.project-link:hover + .container-1 {
+  display: block;
+}
+.pro2:hover {
+  filter: brightness(30%);
+}
+
+.project-link:hover + .container-1 {
+  display: block;
+}
+.pro1:hover {
+  filter: brightness(30%);
+}
+
+.project-link:hover + .container-1 {
+  display: block;
+}
+.pro4:hover {
+  filter: brightness(30%);
+}
+.space-1 {
+  height: 100px;
+}
+
+#project-heading {
+  text-align: center;
+  font-family: "Goldman", cursive;
+}
+
+@media (max-width: 1200px) {
+  .section-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-1:hover {
+    width: auto;
+    display: block;
+  }
+}
+/* ---------Progress-bar--------*/
+
+.progressbar {
+  background-color: lightgrey;
+  border-radius: 1px;
+  padding: 2px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#skills {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 10px 18px 8px #c0c0c0;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.skills-heading {
+  text-align: center;
+  font-family: "Goldman", cursive;
+}
+.html,
+.css,
+.sass,
+.bootstrap,
+.js {
+  margin-left: 100px;
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+}
+.htmlp,
+.cssp,
+.sassp,
+.bootstrapp,
+.jsp {
+  text-align: right;
+  margin-right: 100px;
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.progressbar-1 > div {
+  background-color: black;
+  /* Adjust with JavaScript */
+  height: 5px;
+  border-radius: 1px;
+  width: 59%;
+  animation-name: increase-width-1;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes increase-width-1 {
+  0% {
+    transform: scaleX(10px);
+    width: 0%;
+  }
+  20% {
+    transform: scaleX(10px);
+    width: 20%;
+  }
+  40% {
+    transform: scaleX(10px);
+    width: 40%;
+  }
+
+  100% {
+    transform: scaleX(10px);
+    width: 59%;
+  }
+}
+.progressbar-2 > div {
+  background-color: black;
+  /* Adjust with JavaScript */
+  height: 5px;
+  border-radius: 1px;
+  width: 50%;
+  animation-name: increase-width-2;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes increase-width-2 {
+  0% {
+    transform: scaleX(10px);
+    width: 0%;
+  }
+  25% {
+    transform: scaleX(10px);
+    width: 25%;
+  }
+
+  100% {
+    transform: scaleX(10px);
+    width: 50%;
+  }
+}
+
+.progressbar-3 > div {
+  background-color: black;
+  /* Adjust with JavaScript */
+  height: 5px;
+  border-radius: 1px;
+  width: 20%;
+  animation-name: increase-width-3;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes increase-width-3 {
+  0% {
+    transform: scaleX(10px);
+    width: 0%;
+  }
+
+  100% {
+    transform: scaleX(10px);
+    width: 20%;
+  }
+}
+
+.progressbar-4 > div {
+  background-color: black;
+  /* Adjust with JavaScript */
+  height: 5px;
+  border-radius: 1px;
+  width: 50%;
+  animation-name: increase-width-2;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.progressbar-5 > div {
+  background-color: black;
+  /* Adjust with JavaScript */
+  height: 5px;
+  border-radius: 1px;
+  width: 10%;
+  animation-name: increase-width-5;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes increase-width-5 {
+  0% {
+    transform: scaleX(20px);
+    width: 0%;
+  }
+
+  100% {
+    transform: scaleX(10px);
+    width: 10%;
+  }
+}
+.space-2 {
+  height: 50px;
+}
+
+/*------footer----*/
+
+footer {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 3px;
+  position: relative;
+  top: 110px;
+}
+footer strong {
+  font-size: 30px;
+  font-family: "Josefin Sans", sans-serif;
+}
+footer a {
+  font-family: "Josefin Sans", sans-serif;
+  color: gray;
+}
+.fa-facebook {
+  font-size: 40px;
+  position: relative;
+  bottom: 50px;
+  right: 30px;
+}
+.fa-twitter {
+  font-size: 40px;
+  position: relative;
+  bottom: 50px;
+  left: 10px;
+}
+.fa-instagram {
+  font-size: 40px;
+  position: relative;
+  bottom: 50px;
+  left: 40px;
+}
